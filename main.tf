@@ -7,7 +7,7 @@ provider "aws" {
 
 terraform {
   backend "s3" {
-    bucket = "workspacesbucket01"
+    bucket = "workspacesbucket04-eshaan"
     key    = "workspace.statefile"
     region = "us-east-1"
     #dynamodb_table = "dynamodb-state-locking"
@@ -20,7 +20,7 @@ resource "aws_vpc" "default" {
   enable_dns_hostnames = true
   tags = {
     Name  = "${var.vpc_name}"
-    Owner = "Saikiran"
+    Owner = "Eshaan"
   }
 }
 
